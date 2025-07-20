@@ -16,7 +16,7 @@ import 'package:inmo_mobile/features/favourite/presentation/cubit/favourite_info
 import 'package:inmo_mobile/features/favourite/presentation/cubit/favourites/favourites_cubit.dart';
 import 'package:inmo_mobile/features/favourite/presentation/ui/favourite_info/favourite_info_page.dart';
 import 'package:inmo_mobile/features/favourite/presentation/ui/favourites/favourites_page.dart';
-import 'package:inmo_mobile/features/feature/presentation/ui/feature/start_page.dart';
+import 'package:inmo_mobile/features/start/presentation/ui/feature/start_page.dart';
 
 part 'route_path.dart';
 part 'route_transition_factory.dart';
