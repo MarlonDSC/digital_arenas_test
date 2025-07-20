@@ -38,7 +38,7 @@ class _FavouriteInfoPageState extends State<FavouriteInfoPage> {
                 BlocProvider(
                   create: (context) =>
                       sl<BreedImageCubit>()
-                         ..getBreedImage(state.breedInfo.referenceImageId!),
+                         ..getBreedImage(state.breedInfo.referenceImageId),
                   child: BreedCard(breedInfo: state.breedInfo),
                 ),
                 ElevatedButton.icon(

@@ -1,8 +1,9 @@
+import 'package:equatable/equatable.dart';
 import 'package:inmo_mobile/features/breeds/data/models/breed_info.dart';
 import 'package:objectbox/objectbox.dart';
 
 @Entity()
-class Favourite {
+class Favourite extends Equatable {
   @Id()
   int id = 0;
   late String favouriteName;
@@ -50,4 +51,12 @@ class Favourite {
       breedImageId: breedInfo.referenceImageId,
     );
   }
+
+  @override
+  List<Object?> get props => [
+        id,
+        favouriteName,
+        breedId,
+        breedName,
+      ];
 }
