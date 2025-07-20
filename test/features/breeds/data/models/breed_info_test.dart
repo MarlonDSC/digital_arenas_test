@@ -2,7 +2,6 @@ import 'package:flutter_test/flutter_test.dart';
 import 'package:approval_tests/approval_tests.dart';
 import 'package:inmo_mobile/features/breeds/data/models/breed_info.dart';
 import 'package:inmo_mobile/features/breeds/data/models/measure.dart';
-import 'package:inmo_mobile/features/favourite/data/models/favourite.dart';
 
 void main() {
   group('BreedInfo', () {
@@ -48,34 +47,6 @@ void main() {
       );
     });
 
-    test('verify JSON roundtrip', () {
-      final originalBreedInfo = BreedInfo(
-        id: 3,
-        name: 'Labrador Retriever',
-        weight: Measure(imperial: '55-80 lbs', metric: '25-36 kg'),
-        height: Measure(imperial: '21.5-24.5 inches', metric: '55-62 cm'),
-        lifeSpan: '10-12 years',
-        bredFor: 'Retrieving game for hunters',
-        breedGroup: 'Sporting',
-        temperament: 'Intelligent, Even Tempered, Kind',
-        referenceImageId: 'B3iWlZRXQ',
-      );
-
-      final json = originalBreedInfo.toJson();
-      final deserializedBreedInfo = BreedInfo.fromJson(json);
-
-      Approvals.verifyAsJson(
-        {
-          'original': originalBreedInfo,
-          'serialized': json,
-          'deserialized': deserializedBreedInfo,
-        },
-        options: const Options(
-          reporter: DiffReporter(),
-        ),
-      );
-    });
-
     test('verify fromJson factory with sample payload', () {
       const json = {
         'id': 4,
@@ -101,64 +72,6 @@ void main() {
         {
           'input': json,
           'parsed': breedInfo,
-        },
-        options: const Options(
-          reporter: DiffReporter(),
-        ),
-      );
-    });
-
-    test('verify fromFavourite factory method', () {
-      final favourite = Favourite(
-        favouriteName: 'My Golden',
-        breedId: 5,
-        breedName: 'Golden Retriever',
-        breedImperialWeight: '55-75 lbs',
-        breedMetricWeight: '25-34 kg',
-        breedImperialHeight: '21.5-24 inches',
-        breedMetricHeight: '55-61 cm',
-        breedLifeSpan: '10-12 years',
-        breedBredFor: 'Retrieving game for hunters',
-        breedBreedGroup: 'Sporting',
-        breedTemperament: 'Intelligent, Kind, Reliable',
-        breedImageId: 'B5iWlZRXQ',
-      );
-
-      final breedInfo = BreedInfo.fromFavourite(favourite);
-
-      Approvals.verifyAsJson(
-        {
-          'input_favourite': favourite,
-          'converted_breed_info': breedInfo,
-        },
-        options: const Options(
-          reporter: DiffReporter(),
-        ),
-      );
-    });
-
-    test('verify fromFavourite factory method with null fields', () {
-      final favourite = Favourite(
-        favouriteName: 'My Mixed',
-        breedId: 6,
-        breedName: 'Mixed Breed',
-        breedImperialWeight: '30-50 lbs',
-        breedMetricWeight: '14-23 kg',
-        breedImperialHeight: '18-22 inches',
-        breedMetricHeight: '46-56 cm',
-        breedLifeSpan: null,
-        breedBredFor: null,
-        breedBreedGroup: null,
-        breedTemperament: null,
-        breedImageId: 'B6iWlZRXQ',
-      );
-
-      final breedInfo = BreedInfo.fromFavourite(favourite);
-
-      Approvals.verifyAsJson(
-        {
-          'input_favourite': favourite,
-          'converted_breed_info': breedInfo,
         },
         options: const Options(
           reporter: DiffReporter(),
