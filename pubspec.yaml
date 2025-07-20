@@ -52,7 +52,7 @@ dev_dependencies:
   bdd_widget_test: ^1.8.1
   patrol: ^3.17.0
   patrol_finders: ^2.8.2
-  flutter_lints: ^5.0.0
+  flutter_lints: ^6.0.0
   json_serializable: ^6.9.4
   leak_tracker_flutter_testing: ^3.0.9
   retrofit_generator: ^9.1.9
