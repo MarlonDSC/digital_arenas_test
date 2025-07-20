@@ -1,0 +1,96 @@
+{
+  "_note1": "KEEP THIS FILE! Check it into a version control system (VCS) like git.",
+  "_note2": "ObjectBox manages crucial IDs for your object model. See docs for details.",
+  "_note3": "If you have VCS merge conflicts, you must resolve them according to ObjectBox docs.",
+  "entities": [
+    {
+      "id": "1:112189405367640768",
+      "lastPropertyId": "16:1094859100913476372",
+      "name": "Favourite",
+      "properties": [
+        {
+          "id": "1:70081456174360217",
+          "name": "id",
+          "type": 6,
+          "flags": 1
+        },
+        {
+          "id": "2:1019472286991095674",
+          "name": "favouriteName",
+          "type": 9
+        },
+        {
+          "id": "3:2102183811332220954",
+          "name": "breedId",
+          "type": 6
+        },
+        {
+          "id": "4:7240008078247104668",
+          "name": "breedName",
+          "type": 9
+        },
+        {
+          "id": "7:1842300998650317893",
+          "name": "breedLifeSpan",
+          "type": 9
+        },
+        {
+          "id": "8:5288207048091782525",
+          "name": "breedBredFor",
+          "type": 9
+        },
+        {
+          "id": "9:221561764081968638",
+          "name": "breedBreedGroup",
+          "type": 9
+        },
+        {
+          "id": "10:6156974383023858161",
+          "name": "breedTemperament",
+          "type": 9
+        },
+        {
+          "id": "11:3243821709945978131",
+          "name": "breedImageId",
+          "type": 9
+        },
+        {
+          "id": "13:797716502362811122",
+          "name": "breedImperialWeight",
+          "type": 9
+        },
+        {
+          "id": "14:3182694441330800245",
+          "name": "breedMetricWeight",
+          "type": 9
+        },
+        {
+          "id": "15:2984958606114242794",
+          "name": "breedImperialHeight",
+          "type": 9
+        },
+        {
+          "id": "16:1094859100913476372",
+          "name": "breedMetricHeight",
+          "type": 9
+        }
+      ],
+      "relations": []
+    }
+  ],
+  "lastEntityId": "1:112189405367640768",
+  "lastIndexId": "0:0",
+  "lastRelationId": "0:0",
+  "lastSequenceId": "0:0",
+  "modelVersion": 5,
+  "modelVersionParserMinimum": 5,
+  "retiredEntityUids": [],
+  "retiredIndexUids": [],
+  "retiredPropertyUids": [
+    454986700078786845,
+    262752850478516887,
+    4638215609064441429
+  ],
+  "retiredRelationUids": [],
+  "version": 1
+}

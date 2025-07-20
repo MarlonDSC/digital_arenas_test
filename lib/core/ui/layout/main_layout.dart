@@ -140,6 +140,7 @@ class MainLayout extends StatelessWidget {
     if (state is DisplayModalState) {
       await showModalBottomSheet(
         context: context,
+        // constraints: const BoxConstraints(maxHeight: 700),
         builder: (context) => state.modal,
       );
     }

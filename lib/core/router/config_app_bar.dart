@@ -16,9 +16,10 @@ Map<String, AppBarConfig> stringToAppBarConfig(
   BuildContext context,
 ) {
   return {
-    ///
-    /// Logged out user
-    ///
-    RoutePath.feature: AppBarConfig(title: null, onPressed: null),
+    RoutePath.start: AppBarConfig(title: 'GustoMaster', onPressed: null),
+    RoutePath.breeds: AppBarConfig(title: 'Razas', onPressed: () => context.pop()),
+    RoutePath.breedInfo: AppBarConfig(title: 'Información de la raza', onPressed: () => context.pop()),
+    RoutePath.favourites: AppBarConfig(title: 'Favoritos', onPressed: () => context.pop()),
+    RoutePath.favouriteInfo: AppBarConfig(title: 'Información del favorito', onPressed: () => context.pop()),
   };
 }

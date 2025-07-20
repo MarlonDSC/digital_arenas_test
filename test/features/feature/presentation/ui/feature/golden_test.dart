@@ -4,7 +4,7 @@ import 'package:flutter_test/flutter_test.dart';
 import 'package:inmo_mobile/core/errors/bloc/rate_limit_mixin.dart';
 import 'package:inmo_mobile/core/inmo.dart';
 import 'package:inmo_mobile/core/router/config_router.dart';
-import 'package:inmo_mobile/features/feature/presentation/ui/feature/feature_page.dart';
+import 'package:inmo_mobile/features/feature/presentation/ui/feature/start_page.dart';
 import 'package:inmo_test_helpers/inmo_test_helpers.dart';
 import 'package:leak_tracker_flutter_testing/leak_tracker_flutter_testing.dart';
 import 'package:shared_preferences/shared_preferences.dart';
@@ -27,7 +27,7 @@ void main() {
       ),
     );
 
-    await tester.expectGolden<FeaturePage>(
+    await tester.expectGolden<StartPage>(
       suffix: 'initial_state',
       version: 1,
       variant,

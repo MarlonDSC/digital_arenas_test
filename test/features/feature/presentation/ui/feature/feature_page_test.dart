@@ -5,7 +5,7 @@ import 'package:patrol_finders/patrol_finders.dart';
 import 'package:inmo_mobile/core/value_objects/country.dart';
 import 'package:inmo_mobile/core/constants/page_keys.dart';
 import 'package:inmo_mobile/core/router/config_router.dart';
-import 'package:inmo_mobile/features/feature/presentation/ui/feature/feature_page.dart';
+import 'package:inmo_mobile/features/feature/presentation/ui/feature/start_page.dart';
 
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
@@ -25,7 +25,7 @@ void main() {
   group('''Feature Page''', () {
     Future<void> bddSetUp(PatrolTester $) async {
       await theAppIsRunningAt($, RoutePath.feature);
-      await iSeeExactlyWidgets($, 1, FeaturePage);
+      await iSeeExactlyWidgets($, 1, StartPage);
     }
 
     Future<void> beforeEach(String title, [List<String>? tags]) async {
@@ -42,7 +42,7 @@ void main() {
       try {
         await beforeEach('''The feature page is displayed''');
         await bddSetUp($);
-        await iSeeExactlyWidgets($, 1, FeaturePage);
+        await iSeeExactlyWidgets($, 1, StartPage);
       } on TestFailure {
         success = false;
         rethrow;

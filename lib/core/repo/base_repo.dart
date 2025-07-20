@@ -1,3 +1,4 @@
+import 'dart:developer';
 import 'dart:io' show HttpStatus;
 import 'dart:convert';
 
@@ -25,6 +26,7 @@ abstract class BaseRepo {
       final response = await apiCall();
 
       if (response.response.statusCode == successStatusCode) {
+        log('response: ${response.response.data}');
         return _handleSuccessResponse<T>(response, mapResponse);
       }
 

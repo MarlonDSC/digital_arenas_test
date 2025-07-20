@@ -50,5 +50,5 @@ Future<void> initialize() async {
 
   await Firebase.initializeApp(options: DefaultFirebaseOptions.currentPlatform);
 
-  setupLocator('prod', RoutePath.feature);
+  setupLocator('prod', RoutePath.start);
 }

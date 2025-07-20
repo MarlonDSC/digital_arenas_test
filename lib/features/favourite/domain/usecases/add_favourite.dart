@@ -1,0 +1,14 @@
+import 'package:fpdart/fpdart.dart';
+import 'package:inmo_mobile/core/constants/result.dart';
+import 'package:inmo_mobile/features/favourite/data/models/favourite.dart';
+import 'package:inmo_mobile/features/favourite/domain/repo/favourite_repo.dart';
+
+class AddFavouriteUseCase {
+  final FavouriteRepo _favouriteRepo;
+
+  AddFavouriteUseCase(this._favouriteRepo);
+
+  Future<Result<Unit>> call(Favourite favourite) async {
+    return _favouriteRepo.addFavourite(favourite);
+  }
+}

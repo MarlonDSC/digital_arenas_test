@@ -41,12 +41,14 @@ dependencies:
   shared_preferences: ^2.5.3
   flutter_secure_storage: ^9.2.4
   google_sign_in: ^7.1.0
+  objectbox: ^4.3.0
+  objectbox_flutter_libs: any
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
   bloc_test: ^10.0.0
-  build_runner: ^2.4.15
+  build_runner: ^2.5.4
   sqflite_common_ffi: ^2.3.5
   mockito: ^5.4.6
   bdd_widget_test: ^1.8.1
@@ -62,6 +64,7 @@ dev_dependencies:
     path: packages/inmo_test_utils
   inmo_test_helpers:
     path: packages/inmo_test_helpers
+  objectbox_generator: any
 
 patrol:
   app_name: Inmo
