@@ -1,0 +1,70 @@
+name: 🧪 iOS Integration Tests
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+    types:
+      - ready_for_review
+  workflow_dispatch:
+
+jobs:
+  firebase_test_lab:
+    name: 🍎 Run Firebase Test Lab
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: ⬇️ Checkout repository
+        uses: actions/checkout@v4.2.1
+
+      - name: ⚙️ Setup Flutter
+        uses: subosito/flutter-action@v2.16.0
+        with:
+          channel: 'stable'
+          flutter-version-file: pubspec.yaml
+          cache: true
+
+      - name: ⚙️ Install dependencies for all packages
+        run: flutter pub get
+
+      - name: 🗃️ Generate generated files
+        run: flutter pub run build_runner build --delete-conflicting-outputs
+
+      - name: ⚙️ Setup Google Cloud Auth
+        uses: google-github-actions/auth@v2.1.10
+        with:
+          credentials_json: '${{ secrets.FIREBASE_SERVICE_ACCOUNT }}'
+          project_id: '${{ secrets.FIREBASE_PROJECT_ID }}'
+
+      - name: ⚙️ Setup gcloud CLI
+        uses: google-github-actions/setup-gcloud@v2.1.4
+        with:
+          version: latest
+
+      - name: ⚙️ Install Patrol CLI
+        run: dart pub global activate patrol_cli
+
+      - name: 📝 Generate device configuration
+        run: dart scripts/test/generate_test_devices.dart
+
+      - name: 🧪 Run iOS Tests
+        run: |
+          source .env
+          patrol build ios --target integration_test/features/auth/sign_up/sign_up_test.dart --release
+          cd build/ios_integ/Build/Products
+          zip -r ios_tests.zip Release-iphoneos Runner_iphoneos*.xctestrun
+          cd ../../../../
+          gcloud firebase test ios run \
+            --test build/ios_integ/Build/Products/ios_tests.zip \
+            --device "${IOS_DEVICE_1}" \
+            --device "${IOS_DEVICE_2}" \
+            --timeout "${TEST_TIMEOUT}"
+
+      - name: 📤 Upload test results
+        if: always()
+        uses: actions/upload-artifact@v4.6.2
+        with:
+          name: test-results
+          path: |
+            build/ios_integ/Build/Products/ios_tests.zip 

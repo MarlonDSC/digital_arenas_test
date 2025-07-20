@@ -1,0 +1,399 @@
+{
+    "@@locale": "en",
+    "salute": "Salute",
+    "@salute": {
+        "description": "Shown when the user is logged in"
+    },
+    "dismiss": "Dismiss",
+    "@dismiss": {
+        "description": "Shown when the user wants to dismiss a message"
+    },
+    "createAccount": "Create account",
+    "@createAccount": {
+        "description": "Shown when the user wants to create an account"
+    },
+    "firstName": "First name",
+    "@firstName": {
+        "description": "Shown when the user wants to enter their first name"
+    },
+    "lastName": "Last name",
+    "@lastName": {
+        "description": "Shown when the user wants to enter their last name"
+    },
+    "countryCode": "Country code",
+    "@countryCode": {
+        "description": "Shown when the user wants to enter their country code"
+    },
+    "phoneNumber": "Phone number",
+    "@phoneNumber": {
+        "description": "Shown when the user wants to enter their phone number"
+    },
+    "email": "Email",
+    "@email": {
+        "description": "Shown when the user wants to enter their email"
+    },
+    "password": "Password",
+    "@password": {
+        "description": "Shown when the user wants to enter their password"
+    },
+    "countryDominicanRepublic": "Dominican Republic",
+    "@countryDominicanRepublic": {
+        "description": "Shown when the user wants to select the Dominican Republic"
+    },
+    "countryUnitedStatesOfAmerica": "United States of America",
+    "@countryUnitedStatesOfAmerica": {
+        "description": "Shown when the user wants to select the United States of America"
+    },
+    "countryGuatemala": "Guatemala",
+    "@countryGuatemala": {
+        "description": "Shown when the user wants to select Guatemala"
+    },
+    "signUpSuccess": "Sign up successful",
+    "@signUpSuccess": {
+        "description": "Shown when the user has successfully signed up"
+    },
+    "takePhoto": "Take photo",
+    "@takePhoto": {
+        "description": "Shown when the user wants to take a photo"
+    },
+    "chooseFromGallery": "Choose photo from gallery",
+    "@chooseFromGallery": {
+        "description": "Shown when the user wants to choose a photo from the gallery"
+    },
+    "chooseFromVideo": "Choose video from gallery",
+    "@chooseFromVideo": {
+        "description": "Shown when the user wants to choose a video from the gallery"
+    },
+    "takeVideo": "Take video",
+    "@takeVideo": {
+        "description": "Shown when the user wants to take a video"
+    },
+    "deletePhoto": "Delete photo",
+    "@deletePhoto": {
+        "description": "Shown when the user wants to delete a photo"
+    },
+    "replacePhoto": "Replace photo",
+    "@replacePhoto": {
+        "description": "Shown when the user wants to replace a photo"
+    },
+    "cancel": "Cancel",
+    "@cancel": {
+        "description": "Shown when the user wants to cancel an action"
+    },
+    "signUp": "Sign up",
+    "@signUp": {
+        "description": "Shown when the user wants to sign up"
+    },
+    "calendar": "Calendar",
+    "@calendar": {
+        "description": "Shown when the user wants to access the calendar"
+    },
+    "camera": "Camera",
+    "@camera": {
+        "description": "Shown when the user wants to access the camera"
+    },
+    "contacts": "Contacts",
+    "@contacts": {
+        "description": "Shown when the user wants to access the contacts"
+    },
+    "location": "Location",
+    "@location": {
+        "description": "Shown when the user wants to access the location"
+    },
+    "locationAlways": "Location always",
+    "@locationAlways": {
+        "description": "Shown when the user wants to access the location always"
+    },
+    "locationWhenInUse": "Location when in use",
+    "@locationWhenInUse": {
+        "description": "Shown when the user wants to access the location when in use"
+    },
+    "mediaLibrary": "Media library",
+    "@mediaLibrary": {
+        "description": "Shown when the user wants to access the media library"
+    },
+    "microphone": "Microphone",
+    "@microphone": {
+        "description": "Shown when the user wants to access the microphone"
+    },
+    "phone": "Phone",
+    "@phone": {
+        "description": "Shown when the user wants to access the phone"
+    },
+    "photos": "Photos",
+    "@photos": {
+        "description": "Shown when the user wants to access the photos"
+    },
+    "photosAddOnly": "Photos add only",
+    "@photosAddOnly": {
+        "description": "Shown when the user wants to add photos only"
+    },
+    "reminders": "Reminders",
+    "@reminders": {
+        "description": "Shown when the user wants to access the reminders"
+    },
+    "sensors": "Sensors",
+    "@sensors": {
+        "description": "Shown when the user wants to access the sensors"
+    },
+    "sms": "SMS",
+    "@sms": {
+        "description": "Shown when the user wants to access the SMS"
+    },
+    "speech": "Speech",
+    "@speech": {
+        "description": "Shown when the user wants to access the speech"
+    },
+    "storage": "Storage",
+    "@storage": {
+        "description": "Shown when the user wants to access the storage"
+    },
+    "ignoreBatteryOptimizations": "Ignore battery optimizations",
+    "@ignoreBatteryOptimizations": {
+        "description": "Shown when the user wants to ignore battery optimizations"
+    },
+    "notification": "Notification",
+    "@notification": {
+        "description": "Shown when the user wants to access the notification"
+    },
+    "accessMediaLocation": "Access media location",
+    "@accessMediaLocation": {
+        "description": "Shown when the user wants to access the media location"
+    },
+    "activityRecognition": "Activity recognition",
+    "@activityRecognition": {
+        "description": "Shown when the user wants to access the activity recognition"
+    },
+    "emailVerification": "Email verification",
+    "@emailVerification": {
+        "description": "Shown when the user wants to access the email verification"
+    },
+    "enterVerificationCode": "Enter verification code",
+    "@enterVerificationCode": {
+        "description": "Shown when the user wants to enter a verification code"
+    },
+    "weHaveSentAVerificationCodeToYourEmailAddress": "We have sent a verification code to your email address.",
+    "@weHaveSentAVerificationCodeToYourEmailAddress": {
+        "description": "Shown when the user has successfully sent a verification code to their email address"
+    },
+    "verify": "Verify",
+    "@verify": {
+        "description": "Shown when the user wants to verify their email"
+    },
+    "resendCode": "Resend code",
+    "@resendCode": {
+        "description": "Shown when the user wants to resend a verification code"
+    },
+    "verifyLater": "Verify later",
+    "@verifyLater": {
+        "description": "Shown when the user wants to verify later"
+    },
+    "emailVerificationSuccess": "Email verification successful",
+    "@emailVerificationSuccess": {
+        "description": "Shown when the user has successfully verified their email"
+    },
+    "logIn": "Log in",
+    "@logIn": {
+        "description": "Shown when the user wants to log in"
+    },
+    "forgotPassword": "Forgot password?",
+    "@forgotPassword": {
+        "description": "Shown when the user wants to reset their password"
+    },
+    "acceptTermsAndConditions": "I accept the terms and conditions",
+    "@acceptTermsAndConditions": {
+        "description": "Shown when the user wants to accept the terms and conditions"
+    },
+    "acceptPrivacyPolicy": "I accept the privacy policy",
+    "@acceptPrivacyPolicy": {
+        "description": "Shown when the user wants to accept the privacy policy"
+    },
+    "errorEmailOrPasswordIncorrect": "The email or password is incorrect",
+    "@errorEmailOrPasswordIncorrect": {
+        "description": "Shown when the email or password is incorrect"
+    },
+    "english": "English",
+    "@english": {
+        "description": "Shown when the user wants to select English"
+    },
+    "spanish": "Spanish",
+    "@spanish": {
+        "description": "Shown when the user wants to select Spanish"
+    },
+    "french": "French",
+    "@french": {
+        "description": "Shown when the user wants to select French"
+    },
+    "language": "Language",
+    "@language": {
+        "description": "Shown when the user wants to select a language"
+    },
+    "search": "Search",
+    "@search": {
+        "description": "Shown when the user wants to search"
+    },
+    "saved_properties": "Saved properties",
+    "@saved_properties": {
+        "description": "Shown when the user wants to access the saved properties"
+    },
+    "profile": "Profile",
+    "@profile": {
+        "description": "Shown when the user wants to access the profile"
+    },
+    "dontHaveAnAccountSignUp": "Don't have an account? Sign up",
+    "@dontHaveAnAccountSignUp": {
+        "description": "Shown when the user wants to access the don't have an account sign up"
+    },
+    "alreadyHaveAnAccountSignIn": "Already have an account? Sign in",
+    "@alreadyHaveAnAccountSignIn": {
+        "description": "Shown when the user wants to access the already have an account sign in"
+    },
+    "unknown": "Unknown",
+    "@unknown": {
+        "description": "Shown when the user is unknown"
+    },
+    "errorUnknown": "An error occurred",
+    "@errorUnknown": {
+        "description": "Shown when an unknown error occurs"
+    },
+    "errorCountryCodeEmpty": "The country code is required",
+    "@errorCountryCodeEmpty": {
+        "description": "Shown when the country code field is left blank"
+    },
+    "errorCountryCodeInvalid": "The country code is invalid",
+    "@errorCountryCodeInvalid": {
+        "description": "Shown when the country code format is incorrect"
+    },
+    "errorUserNameEmpty": "The name is required",
+    "@errorUserNameEmpty": {
+        "description": "Shown when the name field is left blank"
+    },
+    "errorUserNameTooLong": "The name is too long",
+    "@errorUserNameTooLong": {
+        "description": "Shown when the name exceeds max length"
+    },
+    "errorUserNameInvalidCharacters": "The name contains invalid characters",
+    "@errorUserNameInvalidCharacters": {
+        "description": "Shown when the name contains invalid characters"
+    },
+    "errorUserNameTooShort": "The name is too short",
+    "@errorUserNameTooShort": {
+        "description": "Shown when the name is too short"
+    },
+    "errorNoInternetConnection": "No internet connection",
+    "@errorNoInternetConnection": {
+        "description": "Shown when there is no internet connection"
+    },
+    "errorEmailEmpty": "The email is required",
+    "@errorEmailEmpty": {
+        "description": "Shown when the email field is left blank"
+    },
+    "errorEmailInvalid": "The email is invalid",
+    "@errorEmailInvalid": {
+        "description": "Shown when the email format is incorrect"
+    },
+    "errorEmailTooLong": "The email is too long",
+    "@errorEmailTooLong": {
+        "description": "Shown when the email exceeds max length"
+    },
+    "errorEmailAlreadyExists": "The email is already registered",
+    "@errorEmailAlreadyExists": {
+        "description": "Shown when the email is already registered"
+    },
+    "errorLinkEmpty": "The link is required",
+    "@errorLinkEmpty": {
+        "description": "Shown when the link field is left blank"
+    },
+    "errorLinkInvalid": "The link is invalid",
+    "@errorLinkInvalid": {
+        "description": "Shown when the link format is incorrect"
+    },
+    "errorPasswordEmpty": "The password is required",
+    "@errorPasswordEmpty": {
+        "description": "Shown when the password field is left blank"
+    },
+    "errorPasswordTooShort": "The password is too short",
+    "@errorPasswordTooShort": {
+        "description": "Shown when the password is too short"
+    },
+    "errorPasswordNoUppercase": "The password must contain at least one uppercase letter",
+    "@errorPasswordNoUppercase": {
+        "description": "Shown when the password does not contain an uppercase letter"
+    },
+    "errorPasswordNoLowercase": "The password must contain at least one lowercase letter",
+    "@errorPasswordNoLowercase": {
+        "description": "Shown when the password does not contain a lowercase letter"
+    },
+    "errorPasswordNoNumber": "The password must contain at least one number",
+    "@errorPasswordNoNumber": {
+        "description": "Shown when the password does not contain a number"
+    },
+    "errorPasswordNoSpecialCharacter": "The password must contain at least one special character",
+    "@errorPasswordNoSpecialCharacter": {
+        "description": "Shown when the password does not contain a special character"
+    },
+    "errorPhoneNumberEmpty": "The phone number is required",
+    "@errorPhoneNumberEmpty": {
+        "description": "Shown when the phone number field is left blank"
+    },
+    "errorPhoneNumberInvalid": "The phone number is invalid",
+    "@errorPhoneNumberInvalid": {
+        "description": "Shown when the phone number format is incorrect"
+    },
+    "errorTokenEmpty": "The token is required",
+    "@errorTokenEmpty": {
+        "description": "Shown when the token field is left blank"
+    },
+    "errorTokenInvalid": "The token is invalid",
+    "@errorTokenInvalid": {
+        "description": "Shown when the token format is incorrect"
+    },
+    "errorEmailNotFound": "The email is not found",
+    "@errorEmailNotFound": {
+        "description": "Shown when the email is not found"
+    },
+    "errorTokenExpired": "The token has expired",
+    "@errorTokenExpired": {
+        "description": "Shown when the token has expired"
+    },
+    "errorTokenCodeNotFound": "The token is incorrect",
+    "@errorTokenCodeNotFound": {
+        "description": "Shown when the token is incorrect"
+    },
+    "errorEmailAlreadyVerified": "The email is already verified",
+    "@errorEmailAlreadyVerified": {
+        "description": "Shown when the email is already verified"
+    },
+    "errorConnectionFailed": "Connection failed",
+    "@errorConnectionFailed": {
+        "description": "Shown when the connection fails"
+    },
+    "errorBackendIsUnavailable": "Backend is unavailable",
+    "@errorBackendIsUnavailable": {
+        "description": "Shown when the backend is unavailable"
+    },
+    "errorTooManyRequests": "You've made too many requests. Please try again in a few minutes",
+    "@errorTooManyRequests": {
+        "description": "Shown when the number of requests exceeds the limit of the API"
+    },
+    "errorEmailNotVerified": "The email is not verified",
+    "@errorEmailNotVerified": {
+        "description": "Shown when the email is not verified"
+    },
+    "errorInvalidCredentials": "Invalid credentials",
+    "@errorInvalidCredentials": {
+        "description": "Shown when the credentials are invalid"
+    },
+    "errorGoogleAuthUnsupported": "Google authentication not supported",
+    "@errorGoogleAuthUnsupported": {
+        "description": "Shown when the Google authentication is not supported"
+    },
+    "errorGoogleAuthToken": "An error occurred while getting the Google token",
+    "@errorGoogleAuthToken": {
+        "description": "Shown when an error occurs while getting the Google token"
+    },
+    "errorGoogleLoginFailed": "Google login failed",
+    "@errorGoogleLoginFailed": {
+        "description": "Shown when the Google login fails"
+    }
+}

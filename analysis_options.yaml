@@ -1,0 +1,79 @@
+include: package:flutter_lints/flutter.yaml
+
+analyzer:
+  exclude:
+    - "lib/core/generated/**"
+    - "**.g.dart"
+    - "**.freezed.dart"
+  errors:
+    invalid_annotation_target: ignore
+
+dcm:
+  anti-patterns:
+    - long-method
+    - long-parameter-list
+  metrics:
+    cyclomatic-complexity: 20
+    maximum-nesting-level: 5
+    number-of-parameters: 4
+    source-lines-of-code: 50
+  metrics-exclude:
+    - "test/**"
+    - "lib/core/generated/**"
+    - "**.g.dart"
+    - "**.freezed.dart"
+  rules:
+    - avoid-duplicate-exports
+    - avoid-global-state
+    - avoid-missing-enum-constant-in-map
+    - avoid-nested-conditional-expressions
+    - avoid-throw-in-catch-block
+    - avoid-unnecessary-conditionals
+    - avoid-unrelated-type-assertions
+    - binary-expression-operand-order
+    - double-literal-format
+    - no-boolean-literal-compare
+    - no-empty-block
+    - no-equal-then-else
+    - prefer-conditional-expressions
+    - prefer-first
+    - prefer-last
+    - prefer-match-file-name
+    - prefer-moving-to-variable
+
+linter:
+  rules:
+    - avoid_print
+    - prefer_const_constructors
+    - annotate_overrides
+    - avoid_init_to_null
+
+dart_code_metrics:
+  rules:
+    - prefer-bytes-builder: false
+    - avoid-unassigned-stream-subscriptions: false
+    - avoid-empty-build-when: false
+    - always-remove-listener: false
+    - prefer-single-widget-per-file: false
+    - avoid-unsafe-collection-methods: false
+    - dispose-fields:
+        ignore-blocs: false
+        ignore-get-x: false
+    - dispose-class-fields:
+        methods:
+          - someCustomDispose
+    - avoid-undisposed-instances:
+        ignored-instances:
+          - LongPressGestureRecognizer
+    - prefer-declaring-const-constructor:
+        allow-one: true
+        ignore-abstract: true
+  extends:
+    - recommended
+  metrics:
+    cyclomatic-complexity: 20
+    lines-of-code: 100
+    maximum-nesting-level: 5
+    number-of-used-widgets: 20
+    coupling-between-object-classes: 12
+    number-of-methods: 10

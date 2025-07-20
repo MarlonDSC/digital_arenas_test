@@ -1,0 +1,34 @@
+MODEL_ID: ipad10
+NAME: iPad (10th generation)
+OS_VERSION_IDS: 16.6
+TAGS: 
+
+MODEL_ID: iphone11pro
+NAME: iPhone 11 Pro
+OS_VERSION_IDS: 16.6
+TAGS: 
+
+MODEL_ID: iphone13pro
+NAME: iPhone 13 Pro
+OS_VERSION_IDS: 15.7,16.6
+TAGS: default
+
+MODEL_ID: iphone14pro
+NAME: iPhone 14 Pro
+OS_VERSION_IDS: 16.6
+TAGS: 
+
+MODEL_ID: iphone15
+NAME: iPhone 15
+OS_VERSION_IDS: 18.0
+TAGS: preview=18.0
+
+MODEL_ID: iphone15pro
+NAME: iPhone 15 Pro
+OS_VERSION_IDS: 18.0
+TAGS: preview=18.0
+
+MODEL_ID: iphone8
+NAME: iPhone 8
+OS_VERSION_IDS: 15.7,16.6
+TAGS: 

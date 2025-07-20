@@ -1,0 +1,210 @@
+{
+    "@@locale": "fr",
+    "salute": "Salut",
+    "dismiss": "Rejeter",
+    "createAccount": "Créer un compte",
+    "firstName": "Prénom",
+    "lastName": "Nom",
+    "countryCode": "Code du pays",
+    "phoneNumber": "Numéro de téléphone",
+    "email": "Email",
+    "password": "Mot de passe",
+    "countryDominicanRepublic": "République dominicaine",
+    "countryUnitedStatesOfAmerica": "États-Unis d'Amérique",
+    "countryGuatemala": "Guatemala",
+    "signUpSuccess": "Inscription réussie",
+    "takePhoto": "Prendre une photo",
+    "chooseFromGallery": "Choisir une photo de la galerie",
+    "takeVideo": "Prendre une vidéo",
+    "chooseFromVideo": "Choisir une vidéo de la galerie",
+    "deletePhoto": "Supprimer la photo",
+    "replacePhoto": "Remplacer la photo",
+    "cancel": "Annuler",
+    "signUp": "S'inscrire",
+    "calendar": "Calendrier",
+    "camera": "Caméra",
+    "contacts": "Contacts",
+    "location": "Emplacement",
+    "locationAlways": "Emplacement toujours",
+    "locationWhenInUse": "Emplacement lorsque l'application est en cours d'utilisation",
+    "mediaLibrary": "Bibliothèque multimédia",
+    "microphone": "Microphone",
+    "phone": "Téléphone",
+    "photos": "Photos",
+    "photosAddOnly": "Photos ajouter uniquement",
+    "reminders": "Rappels",
+    "sensors": "Capteurs",
+    "sms": "SMS",
+    "speech": "Parole",
+    "storage": "Stockage",
+    "ignoreBatteryOptimizations": "Ignorer les optimisations de la batterie",
+    "notification": "Notification",
+    "accessMediaLocation": "Accès à la localisation des médias",
+    "activityRecognition": "Reconnaissance d'activité",
+    "emailVerification": "Vérification de l'email",
+    "enterVerificationCode": "Entrer le code de vérification",
+    "weHaveSentAVerificationCodeToYourEmailAddress": "Nous avons envoyé un code de vérification à votre adresse email.",
+    "verify": "Vérifier",
+    "resendCode": "Renvoyer le code",
+    "verifyLater": "Vérifier plus tard",
+    "emailVerificationSuccess": "Vérification de l'email réussie",
+    "logIn": "Se connecter",
+    "forgotPassword": "Mot de passe oublié ?",
+    "acceptTermsAndConditions": "J'accepte les conditions d'utilisation",
+    "acceptPrivacyPolicy": "J'accepte la politique de confidentialité",
+    "errorEmailOrPasswordIncorrect": "L'email ou le mot de passe est incorrect",
+    "english": "Anglais",
+    "spanish": "Espagnol",
+    "french": "Français",
+    "language": "Langue",
+    "search": "Rechercher",
+    "saved_properties": "Propriétés enregistrées",
+    "profile": "Profil",
+    "dontHaveAnAccountSignUp": "Vous n'avez pas de compte ? Créer un compte",
+    "alreadyHaveAnAccountSignIn": "Vous avez déjà un compte ? Se connecter",
+    "unknown": "Inconnu",
+    "errorUnknown": "Une erreur est survenue",
+    "@errorUnknown": {
+        "description": "Affiché lorsqu'une erreur inconnue survient"
+    },
+    "errorCountryCodeEmpty": "Le code du pays est requis",
+    "@errorCountryCodeEmpty": {
+        "description": "Affiché lorsque le champ de code du pays est vide"
+    },
+    "errorCountryCodeInvalid": "Le code du pays est invalide",
+    "@errorCountryCodeInvalid": {
+        "description": "Affiché lorsque le format du code du pays est incorrect"
+    },
+    "errorUserNameEmpty": "Le nom est requis",
+    "@errorUserNameEmpty": {
+        "description": "Affiché lorsque le champ de nom est vide"
+    },
+    "errorUserNameTooLong": "Le nom est trop long",
+    "@errorUserNameTooLong": {
+        "description": "Affiché lorsque le nom dépasse la longueur maximale"
+    },
+    "errorUserNameInvalidCharacters": "Le nom contient des caractères invalides",
+    "@errorUserNameInvalidCharacters": {
+        "description": "Affiché lorsque le nom contient des caractères invalides"
+    },
+    "errorUserNameTooShort": "Le nom est trop court",
+    "@errorUserNameTooShort": {
+        "description": "Affiché lorsque le nom est trop court"
+    },
+    "errorNoInternetConnection": "Aucune connexion internet",
+    "@errorNoInternetConnection": {
+        "description": "Affiché lorsque il n'y a pas de connexion internet"
+    },
+    "errorEmailEmpty": "L'email est requis",
+    "@errorEmailEmpty": {
+        "description": "Affiché lorsque le champ de l'email est vide"
+    },
+    "errorEmailInvalid": "L'email est invalide",
+    "@errorEmailInvalid": {
+        "description": "Affiché lorsque le format de l'email est incorrect"
+    },
+    "errorEmailTooLong": "L'email est trop long",
+    "@errorEmailTooLong": {
+        "description": "Affiché lorsque l'email dépasse la longueur maximale"
+    },
+    "errorEmailAlreadyExists": "L'email est déjà enregistré",
+    "@errorEmailAlreadyExists": {
+        "description": "Affiché lorsque l'email est déjà enregistré"
+    },
+    "errorLinkEmpty": "Le lien est requis",
+    "@errorLinkEmpty": {
+        "description": "Affiché lorsque le champ de lien est vide"
+    },
+    "errorLinkInvalid": "Le lien est invalide",
+    "@errorLinkInvalid": {
+        "description": "Affiché lorsque le format du lien est incorrect"
+    },
+    "errorPasswordEmpty": "Le mot de passe est requis",
+    "@errorPasswordEmpty": {
+        "description": "Affiché lorsque le champ de mot de passe est vide"
+    },
+    "errorPasswordTooShort": "Le mot de passe est trop court",
+    "@errorPasswordTooShort": {
+        "description": "Affiché lorsque le mot de passe est trop court"
+    },
+    "errorPasswordNoUppercase": "Le mot de passe doit contenir au moins une lettre majuscule",
+    "@errorPasswordNoUppercase": {
+        "description": "Affiché lorsque le mot de passe ne contient pas de lettre majuscule"
+    },
+    "errorPasswordNoLowercase": "Le mot de passe doit contenir au moins une lettre minuscule",
+    "@errorPasswordNoLowercase": {
+        "description": "Affiché lorsque le mot de passe ne contient pas de lettre minuscule"
+    },
+    "errorPasswordNoNumber": "Le mot de passe doit contenir au moins un chiffre",
+    "@errorPasswordNoNumber": {
+        "description": "Affiché lorsque le mot de passe ne contient pas de chiffre"
+    },
+    "errorPasswordNoSpecialCharacter": "Le mot de passe doit contenir au moins un caractère spécial",
+    "@errorPasswordNoSpecialCharacter": {
+        "description": "Affiché lorsque le mot de passe ne contient pas de caractère spécial"
+    },
+    "errorPhoneNumberEmpty": "Le numéro de téléphone est requis",
+    "@errorPhoneNumberEmpty": {
+        "description": "Affiché lorsque le champ de numéro de téléphone est vide"
+    },
+    "errorPhoneNumberInvalid": "Le numéro de téléphone est invalide",
+    "@errorPhoneNumberInvalid": {
+        "description": "Affiché lorsque le format du numéro de téléphone est incorrect"
+    },
+    "errorTokenEmpty": "Le token est requis",
+    "@errorTokenEmpty": {
+        "description": "Affiché lorsque le champ de token est vide"
+    },
+    "errorTokenInvalid": "Le token est invalide",
+    "@errorTokenInvalid": {
+        "description": "Affiché lorsque le format du token est incorrect"
+    },
+    "errorEmailNotFound": "L'email n'est pas trouvé",
+    "@errorEmailNotFound": {
+        "description": "Affiché lorsque l'email n'est pas trouvé"
+    },
+    "errorTokenExpired": "Le token a expiré",
+    "@errorTokenExpired": {
+        "description": "Affiché lorsque le token a expiré"
+    },
+    "errorTokenCodeNotFound": "Le token est incorrect",
+    "@errorTokenCodeNotFound": {
+        "description": "Affiché lorsque le token est incorrect"
+    },
+    "errorEmailAlreadyVerified": "L'email est déjà vérifié",
+    "@errorEmailAlreadyVerified": {
+        "description": "Affiché lorsque l'email est déjà vérifié"
+    },
+    "errorConnectionFailed": "La connexion a échoué",
+    "@errorConnectionFailed": {
+        "description": "Affiché lorsque la connexion a échoué"
+    },
+    "errorBackendIsUnavailable": "Le backend est indisponible",
+    "@errorBackendIsUnavailable": {
+        "description": "Affiché lorsque le backend est indisponible"
+    },
+    "errorTooManyRequests": "Vous avez fait trop de requêtes. Veuillez réessayer dans quelques minutes",
+    "@errorTooManyRequests": {
+        "description": "Affiché lorsque le nombre de requêtes dépasse le nombre de requêtes autorisées par l'API"
+    },
+    "errorEmailNotVerified": "L'email n'est pas vérifié",
+    "@errorEmailNotVerified": {
+        "description": "Affiché lorsque l'email n'est pas vérifié"
+    },
+    "errorInvalidCredentials": "Identifiants invalides",
+    "@errorInvalidCredentials": {
+        "description": "Affiché lorsque les identifiants sont invalides"
+    },
+    "errorGoogleAuthUnsupported": "L'authentification avec Google n'est pas supportée",
+    "@errorGoogleAuthUnsupported": {
+        "description": "Affiché lorsque l'authentification avec Google n'est pas supportée"
+    },
+    "errorGoogleAuthToken": "Une erreur est survenue lors de la récupération du token Google",
+    "@errorGoogleAuthToken": {
+        "description": "Affiché lorsque une erreur survient lors de la récupération du token Google"
+    },
+    "errorGoogleLoginFailed": "La connexion avec Google a échoué",
+    "@errorGoogleLoginFailed": {
+        "description": "Affiché lorsque la connexion avec Google a échoué"
+    }
+}

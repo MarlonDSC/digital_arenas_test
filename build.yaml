@@ -1,0 +1,20 @@
+targets:
+  $default:
+    sources:
+      - integration_test/**
+      - test/**
+      - lib/**
+      - packages/**
+      - $package$
+    builders:
+      bdd_widget_test|featureBuilder:
+        options:
+          testMethodName: patrolWidgetTest
+          addHooks: true
+          testerName: $
+          testerType: PatrolTester
+          includeIntegrationTestBinding: false
+      mockito|mockBuilder:
+        generate_for:
+          include:
+            - packages/inmo_test_helpers/lib/src/test_helper.dart

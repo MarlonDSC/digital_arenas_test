@@ -1,0 +1,19 @@
+name: inmo_test_utils
+description: Test utilities for Inmo Mobile app
+version: 0.0.1
+publish_to: none
+
+environment:
+  sdk: '>=3.7.2 < 4.0.0'
+  flutter: '3.32.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_test:
+    sdk: flutter
+  mockito: ^5.4.6
+  json_annotation: ^4.9.0
+
+dev_dependencies:
+  flutter_lints: ^5.0.0 

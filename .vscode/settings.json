@@ -1,0 +1,6 @@
+{
+    "sonarlint.connectedMode.project": {
+        "connectionId": "codeflow-dynamics",
+        "projectKey": "CodeFlow-Dynamics_inmo_mobile"
+    }
+}

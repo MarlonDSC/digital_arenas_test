@@ -1,0 +1,65 @@
+name: 🧪 Unit and Widget Tests
+
+on:
+  pull_request:
+    branches:
+      - main
+    types:
+      - ready_for_review
+      - synchronize
+      - reopened
+    paths-ignore:
+      - '**.md'
+      - 'doc/**'
+      - '.git/'
+      - '.vscode/'
+      - '.github/'
+      - '.vscode/**'
+
+permissions:
+  contents: read
+  actions: read
+  checks: write
+  pull-requests: write
+  statuses: write
+  repository-projects: write
+
+jobs:
+  tests:
+    name: 🧪 Run Unit Tests and Widget Tests
+    runs-on: ubuntu-latest
+    steps:
+      - name: ⬇️ Checkout repository
+        uses: actions/checkout@v4.2.1
+
+      - name: ⚙️ Setup Flutter
+        uses: subosito/flutter-action@v2.16.0
+        with:
+          channel: 'stable'
+          flutter-version-file: pubspec.yaml
+          cache: true
+
+      - name: ⚙️ Install dependencies for all packages
+        run: flutter pub get
+
+      - name: 🗃️ Generate generated files
+        run: flutter pub run build_runner build --delete-conflicting-outputs
+
+      - name: 🧪 Run tests
+        run: flutter test
+
+      - name: 📝 Save test results
+        uses: dorny/test-reporter@v1.9.1
+        if: success() || failure()
+        with:
+          name: Flutter Tests ${{ github.event.pull_request.number }}
+          path: test-results.json
+          reporter: flutter-json
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: ✅ Approve Pull Request
+        if: success()
+        uses: hmarr/auto-approve-action@v4
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          review-message: "Reviewed and approved by CI"

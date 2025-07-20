@@ -1,0 +1,12 @@
+include: package:bdd_widget_test/bdd_options.yaml
+externalSteps:
+  - package:inmo_test_helpers/src/steps/core/i_enter_into_text_field.dart
+  - package:inmo_test_helpers/src/steps/core/i_see_a_text.dart
+  - package:inmo_test_helpers/src/steps/core/i_see_exactly_widgets.dart
+  - package:inmo_test_helpers/src/steps/core/i_see_icon.dart
+  - package:inmo_test_helpers/src/steps/core/i_see_page.dart
+  - package:inmo_test_helpers/src/steps/core/i_tap_button.dart
+  - package:inmo_test_helpers/src/steps/core/i_tap_icon.dart
+  - package:inmo_test_helpers/src/steps/core/im_on_the_page.dart
+  - package:inmo_test_helpers/src/steps/core/the_app_is_running_at.dart
+  - package:inmo_test_helpers/src/steps/core/the_snackbar_contains_text.dart

@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "430317333991",
+    "project_id": "inmo-lat",
+    "storage_bucket": "inmo-lat.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:430317333991:android:1ddfdf0b260b026577a142",
+        "android_client_info": {
+          "package_name": "com.cdd.inmo"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBtHqJiYeEXnw4kzEYrgAEG3DOgv-IOAP4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

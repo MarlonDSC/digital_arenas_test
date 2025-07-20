@@ -1,0 +1,94 @@
+name: inmo_mobile
+description: "A new Flutter project."
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.8.1 < 4.0.0'
+  flutter: '3.32.7'
+
+scripts:
+  generate_mocks: dart run build_runner build --delete-conflicting-outputs
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_localizations:
+    sdk: flutter
+  intl: ^0.20.2
+  talker_bloc_logger: ^4.7.9
+  cupertino_icons: ^1.0.8
+  bloc: ^9.0.0
+  get_it: ^8.0.3
+  equatable: ^2.0.7
+  fpdart: ^1.1.1
+  flutter_bloc: ^9.1.0
+  json_annotation: ^4.9.0
+  permission_handler: ^12.0.0+1
+  rxdart: ^0.28.0
+  go_router: ^15.1.2
+  firebase_core: ^3.13.0
+  firebase_crashlytics: ^4.3.6
+  firebase_analytics: ^11.4.6
+  dio: ^5.8.0+1
+  image_picker: ^1.1.2
+  retrofit: ^4.4.2
+  connectivity_plus: ^6.1.4
+  app_links: ^6.4.0
+  adaptive_golden_test: ^1.2.0
+  approval_tests: ^1.2.1
+  firebase_performance: ^0.10.1+6
+  shared_preferences: ^2.5.3
+  flutter_secure_storage: ^9.2.4
+  google_sign_in: ^7.1.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  bloc_test: ^10.0.0
+  build_runner: ^2.4.15
+  sqflite_common_ffi: ^2.3.5
+  mockito: ^5.4.6
+  bdd_widget_test: ^1.8.1
+  patrol: ^3.17.0
+  patrol_finders: ^2.8.2
+  flutter_lints: ^5.0.0
+  json_serializable: ^6.9.4
+  leak_tracker_flutter_testing: ^3.0.9
+  retrofit_generator: ^9.1.9
+  http_mock_adapter: ^0.6.1
+  firebase_auth_mocks: ^0.14.2
+  inmo_test_utils:
+    path: packages/inmo_test_utils
+  inmo_test_helpers:
+    path: packages/inmo_test_helpers
+
+patrol:
+  app_name: Inmo
+  android:
+    package_name: com.cdd.inmo
+  ios:
+    bundle_id: com.cdd.inmo
+
+flutter:
+  generate: true
+  uses-material-design: true
+
+  assets:
+  - assets/images/logos/
+
+  fonts:
+  - family: Roboto
+    fonts:
+      - asset: assets/fonts/roboto/Roboto-Black.ttf
+      - asset: assets/fonts/roboto/Roboto-BlackItalic.ttf
+      - asset: assets/fonts/roboto/Roboto-Bold.ttf
+      - asset: assets/fonts/roboto/Roboto-BoldItalic.ttf
+      - asset: assets/fonts/roboto/Roboto-Italic.ttf
+      - asset: assets/fonts/roboto/Roboto-Light.ttf
+      - asset: assets/fonts/roboto/Roboto-LightItalic.ttf
+      - asset: assets/fonts/roboto/Roboto-Medium.ttf
+      - asset: assets/fonts/roboto/Roboto-MediumItalic.ttf
+      - asset: assets/fonts/roboto/Roboto-Regular.ttf
+      - asset: assets/fonts/roboto/Roboto-Thin.ttf
+      - asset: assets/fonts/roboto/Roboto-ThinItalic.ttf
