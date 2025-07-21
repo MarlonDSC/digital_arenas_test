@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:inmo_mobile/core/errors/bloc/modal/modal_bloc.dart';
+import 'package:inmo_mobile/core/extensions/context_extensions.dart';
 import 'package:inmo_mobile/di.dart';
 import 'package:inmo_mobile/features/breeds/data/models/breed_info.dart';
 import 'package:inmo_mobile/features/breeds/presentation/cubit/breed_image/breed_image_cubit.dart';
@@ -58,9 +59,7 @@ class _BreedInfoPageState extends State<BreedInfoPage> {
 
   void _onGetBreedInfo(BuildContext context, BreedInfoState state) {
     if (state is BreedInfoError) {
-      ScaffoldMessenger.of(
-        context,
-      ).showSnackBar(SnackBar(content: Text(state.errors.toString())));
+      context.displayErrors(state.errors);
     } else if (state is BreedInfoLoaded) {
       context.read<BreedImageCubit>().getBreedImage(
         state.breedInfo.referenceImageId,

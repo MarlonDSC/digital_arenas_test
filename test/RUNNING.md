@@ -1,9 +1,7 @@
 # Running tests
 
 ## Unit tests and Widget tests
-```bash
-flutter test
-```
+
 
 ## Integration tests locally
 1. Get devices

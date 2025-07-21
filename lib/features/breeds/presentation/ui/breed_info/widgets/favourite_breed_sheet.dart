@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:go_router/go_router.dart';
 import 'package:inmo_mobile/core/errors/bloc/message/message_bloc.dart';
-import 'package:inmo_mobile/core/router/config_router.dart';
 import 'package:inmo_mobile/core/value_objects/priority_type.dart';
 import 'package:inmo_mobile/features/breeds/data/models/breed_info.dart';
 import 'package:inmo_mobile/features/favourite/presentation/cubit/favourite_info/favourite_info_cubit.dart';
@@ -87,15 +86,12 @@ class _FavouriteBreedSheetState extends State<FavouriteBreedSheet> {
   void _onAddFavourite(BuildContext context, FavouriteInfoState state) {
     if (state is AddFavouriteSuccess) {
       context.read<MessageBloc>().add(
-        DisplayMessage(
+        const DisplayMessage(
           ['Favorito agregado correctamente'],
           priority: PriorityType.low,
-          action: MapEntry(
-            'Ver todos',
-            () => context.push(RoutePath.favourites),
-          ),
         ),
       );
+      context.pop();
     }
   }
 }

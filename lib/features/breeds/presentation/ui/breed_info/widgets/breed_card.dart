@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:inmo_mobile/core/extensions/context_extensions.dart';
 import 'package:inmo_mobile/features/breeds/data/models/breed_info.dart';
 import 'package:inmo_mobile/features/breeds/presentation/cubit/breed_image/breed_image_cubit.dart';
 
@@ -68,9 +69,7 @@ class BreedCard extends StatelessWidget {
 
   void _onGetBreedImage(BuildContext context, BreedImageState state) {
     if (state is BreedImageError) {
-      ScaffoldMessenger.of(context).showSnackBar(
-        const SnackBar(content: Text('Error al obtener la imagen')),
-      );
+      context.displayErrors(state.errors);
     }
   }
 }
