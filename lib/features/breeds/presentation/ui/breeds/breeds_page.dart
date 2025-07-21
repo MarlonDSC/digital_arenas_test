@@ -20,6 +20,9 @@ class _BreedsPageState extends State<BreedsPage> {
           return const Center(child: CircularProgressIndicator());
         }
         if (state is BreedsLoaded) {
+          if (state.breeds.isEmpty) {
+            return const Center(child: Text('No se encontraron razas'));
+          }
           return ListView.builder(
             itemCount: state.breeds.length,
             itemBuilder: (context, index) {

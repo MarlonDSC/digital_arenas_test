@@ -4,7 +4,6 @@ import 'package:firebase_crashlytics/firebase_crashlytics.dart';
 import 'package:firebase_performance/firebase_performance.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
-import 'package:inmo_mobile/core/errors/bloc/rate_limit_mixin.dart';
 import 'package:inmo_mobile/core/inmo.dart';
 import 'package:inmo_mobile/core/router/config_router.dart';
 import 'package:inmo_mobile/di.dart';
@@ -46,7 +45,6 @@ void main() async {
 
 Future<void> initialize() async {
   WidgetsFlutterBinding.ensureInitialized();
-  await RateLimit.ensureInitialized();
 
   await Firebase.initializeApp(options: DefaultFirebaseOptions.currentPlatform);
 

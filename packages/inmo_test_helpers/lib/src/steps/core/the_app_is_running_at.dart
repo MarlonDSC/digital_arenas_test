@@ -2,7 +2,6 @@ import 'dart:developer';
 
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
-import 'package:inmo_mobile/core/errors/bloc/rate_limit_mixin.dart';
 import 'package:inmo_test_helpers/inmo_test_helpers.dart';
 import 'package:patrol_finders/patrol_finders.dart';
 import 'package:inmo_mobile/core/inmo.dart';
@@ -13,7 +12,6 @@ Future<void> theAppIsRunningAt(PatrolTester $, String initialRoute) async {
   // TestWidgetsFlutterBinding.ensureInitialized();
   // ignore: invalid_use_of_visible_for_testing_member
   SharedPreferences.setMockInitialValues({});
-  await RateLimit.ensureInitialized();
   await setupDiHelper(initialRoute);
   await $.pumpWidget(const Inmo());
   final materialApp = $.tester.widget<MaterialApp>(find.byType(MaterialApp));

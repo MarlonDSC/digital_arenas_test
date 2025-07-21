@@ -1,15 +1,15 @@
-# Inmo Mobile
+# Gusto Master Mobile
 
 ## Overview
-A Flutter-based mobile application for Inmo platform.
+A Flutter-based mobile application for Gusto Master platform.
 
 ## Documentation & Resources
 
 ### Project Documentation
 - 📱 Mobile App (current repository)
-  - [Project Wiki](https://github.com/CodeFlow-Dynamics/inmo_mobile/wiki) - Detailed technical documentation and guides
-  - [Project Board](https://github.com/CodeFlow-Dynamics/inmo_mobile/projects) - Feature tracking and SRS documentation
-- 🗄️ [Backend Repository](https://github.com/CodeFlow-Dynamics/InmoBackend) - API and server-side implementation
+  - [Project Wiki](https://github.com/CodeFlow-Dynamics/Gusto Master_mobile/wiki) - Detailed technical documentation and guides
+  - [Project Board](https://github.com/CodeFlow-Dynamics/Gusto Master_mobile/projects) - Feature tracking and SRS documentation
+- 🗄️ [Backend Repository](https://github.com/CodeFlow-Dynamics/Gusto MasterBackend) - API and server-side implementation
 
 ### Feature Documentation
 Each feature's detailed specifications (SRS) can be found in the corresponding GitHub Project card. This includes:
@@ -30,8 +30,8 @@ Each feature's detailed specifications (SRS) can be found in the corresponding G
 ### Installation
 1. Clone the repository
 ```bash
-git clone https://github.com/CodeFlow-Dynamics/inmo_mobile.git
-cd inmo_mobile
+git clone https://github.com/MarlonDSC/digital_arenas_test.git
+cd Gusto Master_mobile
 ```
 
 2. Install dependencies
