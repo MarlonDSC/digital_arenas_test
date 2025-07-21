@@ -1,6 +1,9 @@
 name: 🧪 Unit and Widget Tests
 
 on:
+  push:
+    branches:
+      - main
   pull_request:
     branches:
       - main
